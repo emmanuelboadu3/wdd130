@@ -8,12 +8,6 @@
   --body-font: 'Open Sans', sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
@@ -21,16 +15,10 @@ body {
 }
 
 header, main, footer {
-  width: 840px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-header {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
-  padding: 20px;
-  text-align: center;
-}
 
 nav a {
   margin: 0 10px;
