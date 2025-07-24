@@ -55,9 +55,10 @@ h1 {
 header,
 .grid,
 footer {
-  max-width: var(--main-width); /* Restricts layout width to 840px using your custom variable */
-  margin: 0 auto;  
+  max-width: var(--main-width);
+  margin: 0 auto;
 }
+ 
 main {
   margin: 0 auto; /* centers content horizontally */
 }
