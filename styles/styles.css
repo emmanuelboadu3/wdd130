@@ -27,21 +27,38 @@
 
 nav {
   background-color: var(--primary-color);
-  padding: var(var(--nav-padding));
+  padding:var(--nav-padding);
+  display: flex; /* Enables Flexbox layout */
+  justify-content: space-evenly; /* Distributes links evenly across the navbar */
+  align-items: center;
 }
 
 nav a {
   color: var(--text-color);
   display: block;
   padding: var(--link-padding);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-color);
+  background-color: transparent;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
 }
 
 h1 {
   color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color); /* Adds a bold bottom line */
 }
 
+
+header,
+.grid,
+footer {
+  max-width: var(--main-width); /* Restricts layout width to 840px using your custom variable */
+  margin: 0 auto;  
+}
 main {
-  max-width: var(--main-width);
   margin: 0 auto; /* centers content horizontally */
 }
 
@@ -53,6 +70,22 @@ aside {
   background-color: var(--aside-bg);
   color: var(--aside-text);
   text-align: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+main {
+  grid-column: 2 / 3;
+  margin: 1rem;
+}
+
+aside {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  position: relative;
 }
 
 aside img {
