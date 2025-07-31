@@ -1,0 +1,128 @@
+/* Reset and box model setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: navy;
+}
+
+/* Form container */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Fieldset layout */
+fieldset {
+  display: grid;
+  gap: 1rem;
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #006699;
+}
+
+/* Form elements font */
+label,
+input,
+select,
+textarea,
+button {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Label styling */
+label {
+  display: block;
+  padding-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Input/select/textarea spacing */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
+
+/* Button styling */
+button {
+  background-color: #006699;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004466;
+}
+
+/* Divider styling for label + input/select groups */
+.form-item {
+  display: grid;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* Column layout: Browser & Pet (label wider) */
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin-bottom: 15px;
+}
+
+/* Column layout: Full Name & Email (input wider) */
+.column2 {
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
