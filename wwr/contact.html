@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | The Rapids Splash</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Contact The Rapids Splash rafting company to book your next adventure or ask questions.">
+  <meta name="description" content="Reach out to The Rapids Splash rafting company for inquiries, reservations, or feedback.">
+  <meta name="author" content="Emmanuel Boadu">
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- 🔝 Header and Navigation -->
   <header>
     <img src="images/z-therapidssplash.jpg" alt="Rafting Company Logo">
     <h1>The Rapids Splash</h1>
@@ -22,69 +26,93 @@
     </nav>
   </header>
 
-  <!-- 🧩 Main Content -->
   <main>
-
-    <!-- 👥 Employee Profiles -->
     <section class="employee-profiles">
       <h2>Meet Our Team</h2>
       <div class="profile-grid">
         <figure>
-          <img src="images/adwoa.jpg" alt="Adwoa joyful with guests">
-          <figcaption>Adwoa – Guest Relations Specialist</figcaption>
+          <img src="images/daisy.jpg" alt="Guide Emmanuel smiling in gear">
+          <figcaption>Daisy – Lead Guide</figcaption>
         </figure>
         <figure>
-          <img src="images/daisy.jpg" alt="Daisy very happy at the rafting site">
-          <figcaption>Daisy – Adventure Host</figcaption>
+          <img src="images/ama.jpg" alt="Guide Ama preparing equipment">
+          <figcaption>Ama – Safety Coordinator</figcaption>
         </figure>
         <figure>
-          <img src="images/kojo.jpg" alt="Kojo happy at the work office compound">
-          <figcaption>Kojo – Lead Rafting Guide</figcaption>
+          <img src="images/adwoa.jpg" alt="Guide Kwame on the river">
+          <figcaption>Adwoa – Adventure Planner</figcaption>
+        </figure>
+        <figure>
+          <img src="images/kojo.jpg" alt="Kojo smiling at the company compound with Fred in the background">
+          <figcaption>Kojo – River Navigation Specialist</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- 📝 Contact Form -->
     <section class="contact-form">
       <h2>Contact Us</h2>
-      <p>We’d love to hear from you! Whether you have questions, want to book a trip, or just want to say hi—reach out below.</p>
-      <form action="submit-form.php" method="post" class="custom-contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+      <form class="custom-contact-form" action="submit-form.html" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
 
-        <label for="email">Email:</label>
+        <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required>
 
         <fieldset>
-          <legend>Purpose of Message:</legend>
-          <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-          <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-          <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+          <legend>Purpose of Contact:</legend>
+          <label><input type="radio" name="purpose" value="inquiry" required> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="reservation"> Reservation</label>
+          <label><input type="radio" name="purpose" value="feedback"> Feedback</label>
         </fieldset>
-
-        <label for="message">Message:</label>
+        <label for="message">Your Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
+        <label><input type="checkbox" name="subscribe"> Subscribe to our newsletter</label>
 
-        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
-
-        <button type="submit" class="submit-button">Send Message</button>
+        <button type="submit">Send Message</button>
       </form>
     </section>
 
-    <!-- 📍 Company Info and Map -->
     <section class="company-info">
-      <h3>Company Information</h3>
-      <p><strong>Address:</strong> Lake Volta, Eastern Region, Ghana</p>
-      <p><strong>Phone:</strong> +233 59 256 4660</p>
-      <p><strong>Email:</strong> info@therapidssplash.com</p>
-      <p><strong>Find Us on the Map</strong></p>
+      <h2>Our Location</h2>
+      <p>The Rapids Splash<br>
+         P.O. Box 123, Kumasi, Ghana<br>
+         Phone: +233 59 256 4660<br>
+         Email: info@therapidssplash.com</p>
+    </section>
+    <div class="map-container">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.8411068888413!2d-1.6188995259164276!3d6.666603493328382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb9700388ea2f1%3A0x489dbb9124810990!2sKenyase%20Abrem!5e0!3m2!1sen!2sgh!4v1754160662407!5m2!1sen!2sgh"
+    width="600" 
+    height="450"
+    allowfullscreen 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+    <section class="social-media">
+      <h2>Follow Us</h2>
+      <p>Stay connected with us on social media for the latest updates and adventures!</p>
+      <nav class="socialmedia">
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.svg" alt="Facebook logo" width="32">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter.svg" alt="Twitter logo" width="32">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/instagram.svg" alt="Instagram logo" width="32">
+        </a>
+      </nav>
     </section>
   </main>
 
-  <!-- 🔚 Footer -->
-  <footer class="contact-footer">
-    <p>© 2025 The Rapids Splash | Emmanuel Boadu</p>
-    <a href="images/contact-wireframe.png" class="footer-link" target="_blank">View Contact Us Wireframe</a>
+  <footer>
+    <p>&copy; 2025 The Rapids Splash | Emmanuel Boadu</p>
+    </nav>
+    <a href="images/contact-wireframe.png" class="footer-link" target="_blank">View Contact Page Wireframe</a>
+
   </footer>
 </body>
 </html>
+

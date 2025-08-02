@@ -1,175 +1,14 @@
-:root {
-  --primary-color: #264969;
-  --secondary-color: #505033;
-  --accent1-color: #444444;
-  --accent2-color: #B4CDE4;
-
-  --heading-font: 'Playfair Display', serif;
-  --body-font: 'Open Sans', sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: white;
-  line-height: 1.6;
-}
-
-header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  background-color: var(--primary-color);
-  padding: 1rem 2rem;
-  color: white;
-}
-
-nav ul.navigation {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-nav a.active {
-  text-decoration: underline;
-}
-
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-.hero {
-  position: relative;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero-title {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  background-color: var(--accent1-color);
-  color: white;
-  opacity: 0.7;
-  padding: 16px;
-  font-size: 2rem;
-}
-
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  padding: 16px;
-  background-color: rgba(255,255,255,0.8);
-  border-radius: 8px;
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 10px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.history {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2rem;
-  padding: 2rem;
-  background-color: var(--accent2-color);
-}
-
-.history img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.adventures {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 2rem;
-}
-
-.adventures figure {
-  flex: 1 1 18%;
-  text-align: center;
-}
-
-.adventures img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.adventures figcaption {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  font-style: italic;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1rem 2rem;
-}
-
-.socialmedia {
-  display: flex;
-  gap: 1rem;
-}
-
-.socialmedia img {
-  width: 32px;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.socialmedia a:hover img {
-  transform: scale(1.1);
-}
-
-.section {
-  padding: 2rem;
-}
-
-.center-text {
-  text-align: center;
-}
-
+/* Employee Profiles Section */
 .employee-profiles {
   background-color: var(--accent2-color);
+  padding: 2rem;
 }
 
 .employee-profiles h2 {
   text-align: center;
   margin-bottom: 1rem;
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
 .profile-grid {
@@ -197,8 +36,10 @@ footer {
   color: var(--accent1-color);
 }
 
+/* Contact Form Section */
 .contact-form {
   background-color: #fff;
+  padding: 2rem;
 }
 
 .custom-contact-form {
@@ -224,9 +65,13 @@ footer {
   font-family: var(--body-font);
 }
 
-.custom-contact-form fieldset {
-  border: none;
-  padding: 0;
+.custom-contact-form input[type="radio"],
+.custom-contact-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.custom-contact-form textarea {
+  resize: vertical;
 }
 
 .custom-contact-form button {
@@ -244,6 +89,7 @@ footer {
   background-color: var(--accent1-color);
 }
 
+/* Company Info Section */
 .company-info {
   background-color: #f0f0f0;
   text-align: center;
@@ -253,8 +99,10 @@ footer {
 .company-info p {
   margin: 0.5rem 0;
   font-weight: bold;
+  font-family: var(--body-font);
 }
 
+/* Map Section */
 .map-container {
   padding: 2rem;
   text-align: center;
@@ -264,18 +112,10 @@ footer {
   border: none;
   border-radius: 8px;
   max-width: 100%;
-  height: 200px;
+  height: 300px;
 }
 
-/* Footer styling specific to contact page */
-.contact-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-/* Reusable footer link style */
+/* Footer Link for Wireframe */
 .footer-link {
   display: inline-block;
   margin-top: 10px;
