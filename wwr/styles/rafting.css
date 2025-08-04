@@ -1,4 +1,63 @@
-/* Employee Profiles Section */
+/* Root Variables */
+:root {
+  --primary-color: #0077cc;
+  --accent1-color: #005fa3;
+  --accent2-color: #e0f7fa;
+  --heading-font: 'Playfair Display', serif;
+  --body-font: 'Open Sans', sans-serif;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  background-color: #ffffff;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+header img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+header h1 {
+  margin: 0.5rem 0;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation a.active {
+  text-decoration: underline;
+}
+
+/* Employee Profiles */
 .employee-profiles {
   background-color: var(--accent2-color);
   padding: 2rem;
@@ -7,8 +66,6 @@
 .employee-profiles h2 {
   text-align: center;
   margin-bottom: 1rem;
-  font-family: var(--heading-font);
-  color: var(--primary-color);
 }
 
 .profile-grid {
@@ -36,7 +93,7 @@
   color: var(--accent1-color);
 }
 
-/* Contact Form Section */
+/* Contact Form */
 .contact-form {
   background-color: #fff;
   padding: 2rem;
@@ -89,7 +146,7 @@
   background-color: var(--accent1-color);
 }
 
-/* Company Info Section */
+/* Company Info */
 .company-info {
   background-color: #f0f0f0;
   text-align: center;
@@ -99,10 +156,9 @@
 .company-info p {
   margin: 0.5rem 0;
   font-weight: bold;
-  font-family: var(--body-font);
 }
 
-/* Map Section */
+/* Map */
 .map-container {
   padding: 2rem;
   text-align: center;
@@ -115,11 +171,51 @@
   height: 300px;
 }
 
-/* Footer Link for Wireframe */
+/* Social Media */
+.social-media {
+  background-color: var(--accent2-color);
+  padding: 2rem;
+  text-align: center;
+}
+
+.socialmedia a {
+  margin: 0 0.5rem;
+}
+
+.socialmedia img {
+  vertical-align: middle;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
 .footer-link {
   display: inline-block;
   margin-top: 10px;
   font-size: 0.9rem;
   color: #ffffff;
   text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-contact-form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
 }
