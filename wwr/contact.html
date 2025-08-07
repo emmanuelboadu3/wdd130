@@ -62,15 +62,27 @@
 
         <fieldset>
           <legend>Purpose of Contact:</legend>
-          <label><input type="radio" name="purpose" value="inquiry" required> General Inquiry</label>
-          <label><input type="radio" name="purpose" value="reservation"> Reservation</label>
-          <label><input type="radio" name="purpose" value="feedback"> Feedback</label>
+          <label for="inquiry">
+            <input type="radio" id="inquiry" name="purpose" value="inquiry" required>
+            General Inquiry
+          </label>
+          <label for="reservation">
+            <input type="radio" id="reservation" name="purpose" value="reservation">
+            Reservation
+          </label>
+          <label for="feedback">
+            <input type="radio" id="feedback" name="purpose" value="feedback">
+            Feedback
+          </label>
         </fieldset>
 
         <label for="message">Your Message:</label>
         <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
 
-        <label><input type="checkbox" name="subscribe"> Subscribe to our newsletter</label>
+        <label for="subscribe">
+          <input type="checkbox" id="subscribe" name="subscribe">
+          Subscribe to our newsletter
+        </label>
 
         <button type="submit">Send Message</button>
       </form>
