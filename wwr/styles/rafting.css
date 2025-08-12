@@ -9,6 +9,9 @@
   --light-bg: #ffffff;
 }
 
+* {
+  box-sizing: border-box
+}
 /*  Global Styles */
 body {
   margin: 0;
@@ -62,19 +65,25 @@ header img {
 .navigation {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 1rem;
   padding: 0;
   margin: 1rem 0 0;
+}
+.navigation a:hover {
+  color: var(--primary-color);
+  background-color: #ffffff;
 }
 
 .navigation a {
   color: white;
   font-weight: bold;
+  padding: 1rem;
 }
 
 .navigation a.active {
   text-decoration: underline;
+  padding: 1rem;
 }
 
 /* Employee Profiles */
@@ -238,15 +247,23 @@ footer {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 2rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
   background-color: var(--accent2-color);
 }
+
 
 .hero-section {
   position: relative;
   height: 400px;
   overflow: hidden;
 }
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 
 .hero-overlay {
   position: absolute;
@@ -254,7 +271,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -264,17 +281,28 @@ footer {
 }
 
 .hero-text {
+  background-color: transparent;
+  color: black;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: left;
+  font-family: var(--body-font);
 }
 
 .hero-text h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-family: var(--heading-font);
 }
 
 .hero-text p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #000;
+  font-weight: bold;
+  font-family: var(--body-font);
 }
 
 .cta-button {
@@ -284,16 +312,17 @@ footer {
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .cta-button:hover {
   background-color: var(--accent1-color);
 }
 
-.hero-img {
+.hero-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
